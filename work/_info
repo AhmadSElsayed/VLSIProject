@@ -1,0 +1,272 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/ahmad/Desktop/project
+Edma
+Z1 w1523908392
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z4 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z7 8/home/ahmad/Desktop/project/newsrc/DMA.vhd
+Z8 F/home/ahmad/Desktop/project/newsrc/DMA.vhd
+l0
+L6
+VLAE@f=8bLkPPMc`TUk7=91
+!s100 nlg81igVo2XgVjLmoLg7]0
+Z9 OV;C;10.5c;63
+32
+Z10 !s110 1523908420
+!i10b 1
+Z11 !s108 1523908420.000000
+Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/ahmad/Desktop/project/newsrc/DMA.vhd|
+Z13 !s107 /home/ahmad/Desktop/project/newsrc/DMA.vhd|
+!i113 1
+Z14 o-work work -2002 -explicit
+Z15 tExplicit 1 CvgOpt 0
+Aseq
+Z16 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
+Z17 DEx4 work 14 genericcounter 0 22 >]36iQR@oRBdVjTU7C7FN2
+R2
+R3
+R4
+R5
+R6
+Z18 DEx4 work 3 dma 0 22 LAE@f=8bLkPPMc`TUk7=91
+l20
+L15
+V9``8KM9B57F1oCWU_7_GZ2
+!s100 gdH>[i2;58JkNO2^Ri29i2
+R9
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Egenericcounter
+Z19 w1523907265
+R16
+R2
+R3
+R5
+R6
+R0
+Z20 8/home/ahmad/Desktop/project/newsrc/GenericCounter.vhd
+Z21 F/home/ahmad/Desktop/project/newsrc/GenericCounter.vhd
+l0
+L6
+V>]36iQR@oRBdVjTU7C7FN2
+!s100 [>?oNV?nV`iCHl:cCmodZ2
+R9
+32
+Z22 !s110 1523908419
+!i10b 1
+Z23 !s108 1523908419.000000
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/ahmad/Desktop/project/newsrc/GenericCounter.vhd|
+Z25 !s107 /home/ahmad/Desktop/project/newsrc/GenericCounter.vhd|
+!i113 1
+R14
+R15
+Abehavioral
+R16
+R2
+R3
+R5
+R6
+R17
+l23
+L21
+VoLelC874E_EjPf2K1YE3d3
+!s100 b]4:mVlM?h>a;L<Bkc<lc0
+R9
+32
+R22
+!i10b 1
+R23
+R24
+R25
+!i113 1
+R14
+R15
+Ememory
+Z26 w1523718030
+R2
+R3
+R4
+R5
+R6
+R0
+Z27 8/home/ahmad/Desktop/project/newsrc/Memory.vhd
+Z28 F/home/ahmad/Desktop/project/newsrc/Memory.vhd
+l0
+L6
+VI:^3HX6g>gJoKWJ1^L=DO1
+!s100 `41KBD[nU3L4fb0ffl[gC0
+R9
+32
+R22
+!i10b 1
+R23
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/ahmad/Desktop/project/newsrc/Memory.vhd|
+Z30 !s107 /home/ahmad/Desktop/project/newsrc/Memory.vhd|
+!i113 1
+R14
+R15
+Aseq
+R2
+R3
+R4
+R5
+R6
+DEx4 work 6 memory 0 22 I:^3HX6g>gJoKWJ1^L=DO1
+l18
+L15
+Ve0S13WY8_=Y:nECULBNNN2
+!s100 kd_0dUMG89H@<9FAfPoYD2
+R9
+32
+R22
+!i10b 1
+R23
+R29
+R30
+!i113 1
+R14
+R15
+Emultiplier
+Z31 w1523825815
+R4
+R5
+R6
+R0
+Z32 8/home/ahmad/Desktop/project/newsrc/Multiplier.vhd
+Z33 F/home/ahmad/Desktop/project/newsrc/Multiplier.vhd
+l0
+L5
+VU2]Jd5;YCA6CdY5DF_88a3
+!s100 ^:e;MdU_KgaiUR0N5lC<Y1
+R9
+32
+R10
+!i10b 1
+R11
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/ahmad/Desktop/project/newsrc/Multiplier.vhd|
+Z35 !s107 /home/ahmad/Desktop/project/newsrc/Multiplier.vhd|
+!i113 1
+R14
+R15
+Apipelined
+Z36 DEx4 work 14 multiplierpipe 0 22 f0X?BY2E;j4oNoS4i9^oD0
+R4
+R5
+R6
+DEx4 work 10 multiplier 0 22 U2]Jd5;YCA6CdY5DF_88a3
+l15
+L13
+VE;>]8]3iO8?Gl6E?QcHf?0
+!s100 XGlSZ0G2E75g0U9gG1hAO2
+R9
+32
+R10
+!i10b 1
+R11
+R34
+R35
+!i113 1
+R14
+R15
+Emultipliercell
+Z37 w1523824283
+R4
+R5
+R6
+R0
+Z38 8/home/ahmad/Desktop/project/newsrc/MultiplierCell.vhd
+Z39 F/home/ahmad/Desktop/project/newsrc/MultiplierCell.vhd
+l0
+L5
+VU4T:mA?bFl3Eim_3K^e?N2
+!s100 kHj_IT_CJohCMXnFzdc=e1
+R9
+32
+R10
+!i10b 1
+R23
+Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/ahmad/Desktop/project/newsrc/MultiplierCell.vhd|
+Z41 !s107 /home/ahmad/Desktop/project/newsrc/MultiplierCell.vhd|
+!i113 1
+R14
+R15
+Abooth
+R4
+R5
+R6
+Z42 DEx4 work 14 multipliercell 0 22 U4T:mA?bFl3Eim_3K^e?N2
+l17
+L16
+Vg[WJ9=4Cc5zA:OFZ<nW_G1
+!s100 WjTG1^<zAUEgNBm`G]2Al2
+R9
+32
+R10
+!i10b 1
+R23
+R40
+R41
+!i113 1
+R14
+R15
+Emultiplierpipe
+Z43 w1523822948
+R4
+R5
+R6
+R0
+Z44 8/home/ahmad/Desktop/project/newsrc/MultiplierPipe.vhd
+Z45 F/home/ahmad/Desktop/project/newsrc/MultiplierPipe.vhd
+l0
+L5
+Vf0X?BY2E;j4oNoS4i9^oD0
+!s100 D^W;IMPI_@<3Jc2P<NHTK2
+R9
+32
+R10
+!i10b 1
+R11
+Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/ahmad/Desktop/project/newsrc/MultiplierPipe.vhd|
+Z47 !s107 /home/ahmad/Desktop/project/newsrc/MultiplierPipe.vhd|
+!i113 1
+R14
+R15
+Apipe
+R42
+R4
+R5
+R6
+R36
+l16
+L14
+VZ1Co]1WDjDKFT^4H??^V52
+!s100 e1;LCMRVF0Xgmo7SjOZ_W0
+R9
+32
+R10
+!i10b 1
+R11
+R46
+R47
+!i113 1
+R14
+R15
