@@ -19,7 +19,7 @@ begin
 
 	process(Clock)
 	begin
-		if rising_edge(clock) then
+		if falling_edge(clock) then
 			if mode = "11" then -- Read
 				if f = '1' then
 					Window <= 	Row1(2047 - to_integer(unsigned(address))*8 downto 2007 - to_integer(unsigned(address))*8) &

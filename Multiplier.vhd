@@ -67,19 +67,8 @@ begin
 		unsigned(temp_22)+
 		unsigned(temp_23)+
 		unsigned(temp_24)
-		) when f = '1'
-	else
-	std_logic_vector(
-		unsigned(temp_0)+
-		unsigned(temp_1)+
-		unsigned(temp_2)+
-		unsigned(temp_3)+
-		unsigned(temp_4)+
-		unsigned(temp_5)+
-		unsigned(temp_6)+
-		unsigned(temp_7)+
-		unsigned(temp_8)
 		);
+
 	Result <= temp_sum(7 downto 0) when operation = '0' 
 		else temp_sum(12 downto 5) when f = '1'
 		else temp_sum(10 downto 3);
