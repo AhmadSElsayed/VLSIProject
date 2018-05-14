@@ -1,0 +1,10 @@
+read -technology "tsmc035_typ"  { /home/ayman/Desktop/VLSIProject/Constants.vhd }
+read -technology "tsmc035_typ"  { /home/ayman/Desktop/VLSIProject/DMA.vhd }
+read -technology "tsmc035_typ"  { /home/ayman/Desktop/VLSIProject/Cache.vhd }
+read -technology "tsmc035_typ"  { /home/ayman/Desktop/VLSIProject/MultiplierCell.vhd }
+read -technology "tsmc035_typ"  { /home/ayman/Desktop/VLSIProject/MultiplierPipe.vhd }
+read -technology "tsmc035_typ"  { /home/ayman/Desktop/VLSIProject/Cache.vhd }
+read -technology "tsmc035_typ"  { /home/ayman/Desktop/VLSIProject/Cache.vhd }
+read -technology "tsmc035_typ"  { /home/ayman/Desktop/VLSIProject/Cache.vhd }
+read -technology "tsmc035_typ"  { /home/ayman/Desktop/VLSIProject/Cache.vhd }
+read -technology "tsmc035_typ"  { /home/ayman/Desktop/VLSIProject/Cache.vhd }

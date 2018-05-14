@@ -1,0 +1,53 @@
+
+
+
+                        Clock Frequency Report
+
+	Clock                : Frequency
+      ------------------------------------
+
+	Clock                : 171.4 MHz
+
+
+                        Critical Path Report
+
+Critical path #1, (unconstrained path)
+NAME                                     GATE              ARRIVAL              LOAD
+------------------------------------------------------------------------------------
+clock information not specified
+delay thru clock network                                   0.00 (ideal)
+
+
+reg_DMAmode(1)/Q                         dff         0.00  0.50 dn             0.04
+DMA/ix2132/Y                             inv02       0.32  0.83 up             0.11
+DMA/ix2100/Y                             inv02       0.19  1.01 dn             0.06
+DMA/ix1627/Y                             aoi32       0.29  1.30 up             0.01
+DMA/ix2120/Y                             buf02       0.26  1.56 up             0.04
+DMA/ix263/Y                              nor03_2x    0.16  1.72 dn             0.04
+DMA/ix1702/Y                             nand03      0.34  2.06 up             0.04
+DMA/ix399/Y                              nor03_2x    0.19  2.25 dn             0.04
+DMA/ix1749/Y                             nand03      0.34  2.58 up             0.04
+DMA/ix535/Y                              nor03_2x    0.19  2.77 dn             0.04
+DMA/ix1797/Y                             nand03      0.33  3.10 up             0.04
+DMA/ix671/Y                              nor03_2x    0.19  3.29 dn             0.04
+DMA/ix1845/Y                             nand03      0.33  3.62 up             0.04
+DMA/ix807/Y                              nor03_2x    0.19  3.80 dn             0.04
+DMA/ix1893/Y                             nand03      0.33  4.14 up             0.04
+DMA/ix943/Y                              nor03_2x    0.19  4.32 dn             0.04
+DMA/ix1941/Y                             nand03      0.33  4.66 up             0.04
+DMA/ix1079/Y                             nor03_2x    0.16  4.82 dn             0.03
+DMA/ix1153/Y                             nor02ii     0.36  5.18 dn             0.04
+DMA/ix1968/Y                             xnor2       0.18  5.36 up             0.01
+DMA/ix1213/Y                             oai22       0.16  5.52 dn             0.00
+RAddress(17)/                                        0.00  5.52 dn             0.00
+data arrival time                                          5.52
+
+data required time                                      not specified
+------------------------------------------------------------------------------------
+data required time                                      not specified
+data arrival time                                          5.52
+                                                        ----------
+                                                     unconstrained path
+------------------------------------------------------------------------------------
+
+

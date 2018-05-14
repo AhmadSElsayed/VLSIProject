@@ -1,0 +1,1066 @@
+LeonardoSpectrum Level 3 - 2017a.2 (Release Production Release, compiled Jul 18 2017 at 03:19:48)
+Copyright 1990-2017 Mentor Graphics.  All rights reserved.
+Portions copyright 1991-2017 Compuware Corporation
+
+Session history will be logged to file '/home/ayman/altera/14.1/modelsim_ase/linuxaloem/leospec.his'
+--
+-- Welcome to LeonardoSpectrum Level 3
+-- Run Started On Mon May 14 09:29:00 PDT 2018
+--
+Reading library file `/home/ayman/mgc/Leonardo/lib/tsmc035_typ.syn`...
+Library version = 3.0 Release : Patch (a) : 09/13/04
+Delays assume: Process=typical Temp= 27.0 C  Voltage=3.30 V  
+Info: setting encoding to auto
+Info, Command 'load_library' finished successfully
+Info, Working Directory is now '/home/ayman/Desktop'
+Info, History file moved to new working directory
+Info, Log file moved to new working directory
+-- Reading file /home/ayman/mgc/Leonardo/data/standard.vhd for unit standard
+-- Loading package standard into library std
+-- Reading vhdl file /home/ayman/Desktop/VLSIProject/Constants.vhd into library work
+-- Reading file /home/ayman/mgc/Leonardo/data/std_1164.vhd for unit std_logic_1164
+-- Loading package std_logic_1164 into library IEEE
+-- Reading file /home/ayman/mgc/Leonardo/data/numeric_std.vhd for unit numeric_std
+-- Loading package NUMERIC_STD into library IEEE
+-- Searching for SYNOPSYS package STD_LOGIC_UNSIGNED..
+-- Reading file /home/ayman/mgc/Leonardo/data/syn_unsi.vhd for unit STD_LOGIC_UNSIGNED
+-- Searching for SYNOPSYS package std_logic_arith..
+-- Reading file /home/ayman/mgc/Leonardo/data/syn_arit.vhd for unit std_logic_arith
+-- Loading package std_logic_arith into library IEEE
+-- Loading package STD_LOGIC_UNSIGNED into library IEEE
+-- Loading package Constants into library work
+Info: "/home/ayman/Desktop/VLSIProject/Constants.vhd" Nothing to synthesize
+-- Reading vhdl file /home/ayman/Desktop/VLSIProject/Cache.vhd into library work
+-- Loading entity Cache into library work
+-- Loading architecture ShiftingCache of Cache into library work
+-- Compiling root entity Cache(ShiftingCache)
+"/home/ayman/Desktop/VLSIProject/Cache.vhd",line 18: Warning, temp_Window is not always assigned. Storage may be needed..
+Info, Command 'read' finished successfully
+-- Reading vhdl file /home/ayman/Desktop/VLSIProject/DMA.vhd into library work
+-- Loading entity DMA into library work
+-- Loading architecture seq of DMA into library work
+"/home/ayman/Desktop/VLSIProject/DMA.vhd",line 8: Warning, input filter is never used.
+-- Compiling root entity DMA(seq)
+"/home/ayman/Desktop/VLSIProject/DMA.vhd",line 23: Warning, temp_address is not assigned under reset; need loops to preserve its value.
+Info, Command 'read' finished successfully
+-- Reading vhdl file /home/ayman/Desktop/VLSIProject/MultiplierCell.vhd into library work
+-- Loading entity MultiplierCell into library work
+-- Loading architecture booth of MultiplierCell into library work
+-- Compiling root entity MultiplierCell(booth)
+Info, Command 'read' finished successfully
+-- Reading vhdl file /home/ayman/Desktop/VLSIProject/MultiplierPipe.vhd into library work
+-- Loading entity MultiplierPipe into library work
+-- Loading architecture pipe of MultiplierPipe into library work
+"/home/ayman/Desktop/VLSIProject/MultiplierPipe.vhd",line 15: Warning, signal f is never used.
+"/home/ayman/Desktop/VLSIProject/MultiplierPipe.vhd",line 15: Warning, signal f is never assigned a value.
+-- Compiling root entity MultiplierPipe(pipe)
+-- Compiling entity MultiplierCell_8(booth) as black box
+Info, Command 'read' finished successfully
+-- Reading vhdl file /home/ayman/Desktop/VLSIProject/Multiplier.vhd into library work
+-- Loading entity Multiplier into library work
+-- Loading architecture pipelined of Multiplier into library work
+-- Compiling root entity Multiplier(pipelined)
+-- Compiling entity MultiplierPipe_8(pipe) as black box
+Info, Command 'read' finished successfully
+-- Reading vhdl file /home/ayman/Desktop/VLSIProject/Synchronizer.vhd into library work
+-- Loading entity Synchronizer into library work
+-- Loading architecture FSM of Synchronizer into library work
+"/home/ayman/Desktop/VLSIProject/Synchronizer.vhd",line 31: Warning, signal write_done is never used.
+"/home/ayman/Desktop/VLSIProject/Synchronizer.vhd",line 31: Warning, signal f_done is never used.
+"/home/ayman/Desktop/VLSIProject/Synchronizer.vhd",line 37: Warning, signal filterCount is never used.
+"/home/ayman/Desktop/VLSIProject/Synchronizer.vhd",line 40: Warning, signal row_count is never used.
+"/home/ayman/Desktop/VLSIProject/Synchronizer.vhd",line 12: Warning, input RDataIn is never used.
+-- Compiling root entity Synchronizer(FSM)
+"/home/ayman/Desktop/VLSIProject/Synchronizer.vhd",line 51: Warning, DMAReadMode is not assigned under reset; need loops to preserve its value.
+"/home/ayman/Desktop/VLSIProject/Synchronizer.vhd",line 51: Warning, DMAmode is not assigned under reset; need loops to preserve its value.
+"/home/ayman/Desktop/VLSIProject/Synchronizer.vhd",line 26: Warning, CacheRow is not always assigned. Storage may be needed..
+"/home/ayman/Desktop/VLSIProject/Synchronizer.vhd",line 22: Warning, Filterdata is not always assigned. Storage may be needed..
+Info, Command 'read' finished successfully
+-- Boundary optimization.
+-- Start pre-optimization for design .work.DMA.seq_unfold_1383
+"/home/ayman/Desktop/VLSIProject/DMA.vhd", line 31:Info, Inferred counter instance 'write_pointer' of type 'counter_up_cnt_en_aclear_clock_18'
+-- Start pre-optimization for design .work.Cache.ShiftingCache_unfold_2224
+
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(1).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(2).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(3).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(4).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(5).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(6).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(7).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(8).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(9).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(10).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(11).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(12).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(13).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(14).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(15).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(16).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(17).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(18).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(19).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(20).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(21).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(22).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(23).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(24).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(25).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(26).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(27).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(28).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(29).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(30).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(31).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(32).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(33).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(34).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(35).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(36).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(37).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(38).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(39).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(40).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(41).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(42).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(43).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(44).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(45).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(46).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(47).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(48).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(49).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(50).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(51).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(52).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(53).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(54).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(55).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(56).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(57).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(58).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(59).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(60).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(61).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(62).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(63).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(64).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(65).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(66).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(67).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(68).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(69).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(70).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(71).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(73).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(74).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(75).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(76).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(77).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(78).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(79).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(80).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(81).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(82).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(83).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(84).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(85).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(86).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(87).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(88).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(89).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(90).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(91).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(92).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(93).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(94).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(95).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(96).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(97).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(98).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(99).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(100).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(101).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(102).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(103).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(104).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(105).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(106).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(107).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(108).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(109).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(110).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(111).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(112).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(113).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(114).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(115).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(116).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(117).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(118).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(119).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(120).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(121).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(122).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(123).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(124).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(125).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(126).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(127).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(128).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(129).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(130).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(131).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(132).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(133).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(134).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(135).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(136).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(137).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(138).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(139).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(140).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(141).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(142).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(143).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(144).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(145).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(146).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(147).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(148).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(149).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(150).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(151).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(152).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(153).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(154).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(155).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(156).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(157).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(158).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(159).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(160).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(161).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(162).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(163).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(164).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(165).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(166).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(167).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(168).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(169).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(170).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(171).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(172).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(173).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(174).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(175).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(176).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(177).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(178).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(179).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(180).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(181).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(182).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(183).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(184).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(185).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(186).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(187).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(188).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(189).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(190).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(191).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(192).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(193).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(194).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(195).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(196).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(197).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(198).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(199).
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_197.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_196.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_195.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_194.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_193.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_192.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_191.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_190.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_189.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_188.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_187.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_186.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_185.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_184.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_183.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_182.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_181.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_180.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_179.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_178.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_177.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_176.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_175.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_174.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_173.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_172.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_171.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_170.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_169.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_168.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_167.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_166.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_165.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_164.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_163.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_162.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_161.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_160.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_159.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_158.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_157.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_156.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_155.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_154.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_153.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_152.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_151.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_150.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_149.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_148.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_147.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_146.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_145.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_144.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_143.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_142.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_141.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_140.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_139.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_138.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_137.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_136.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_135.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_134.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_133.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_132.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_131.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_130.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_129.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_128.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_127.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_126.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_125.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_124.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_123.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_122.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_121.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_120.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_119.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_118.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_117.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_116.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_115.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_114.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_113.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_112.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_111.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_110.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_109.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_108.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_107.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_106.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_105.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_104.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_103.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_102.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_101.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_100.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_99.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_98.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_97.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_96.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_95.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_94.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_93.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_92.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_91.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_90.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_89.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_88.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_87.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_86.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_85.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_84.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_83.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_82.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_81.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_80.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_79.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_78.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_77.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_76.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_75.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_74.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_73.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_72.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_71.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_70.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_69.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_68.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_67.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_66.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_65.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_64.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_63.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_62.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_61.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_60.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_59.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_58.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_57.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_56.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_55.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_54.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_53.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_52.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_51.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_50.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_49.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_48.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_47.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_46.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_45.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_44.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_43.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_42.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_41.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_40.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_39.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_38.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_37.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_36.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_35.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_34.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_33.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_32.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_31.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_30.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_29.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_28.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_27.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_26.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_25.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_24.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_23.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_22.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_21.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_20.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_19.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_18.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_17.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_16.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_15.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_14.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_13.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_12.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_11.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_10.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_9.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_8.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_7.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_6.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_5.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_4.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_3.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_2.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_1.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_0.
+Info, Merging parallel DFF, Window_dup_198 and Window.-- Start pre-optimization for design .work.Multiplier.pipelined_unfold_2445
+"/home/ayman/Desktop/VLSIProject/Multiplier.vhd", line 68:Info, 24 adders in series feeding nets 'temp_sum(0)' to 'temp_sum(12)', were balanced.
+-- Start pre-optimization for design .work.Synchronizer.FSM
+"/home/ayman/Desktop/VLSIProject/Synchronizer.vhd", line 81:Info, Inferred counter instance 'row_row_count' of type 'counter_up_sclear_aclear_clock_clk_en_3'
+"/home/ayman/Desktop/VLSIProject/Synchronizer.vhd", line 82:Info, Inferred counter instance 'processFinishCount' of type 'counter_up_sclear_aclear_clock_clk_en_3'
+Info, Command 'pre_optimize' finished successfully
+-- Start pre-optimization for design .work.DMA.seq_unfold_1383
+-- Start pre-optimization for design .work.Cache.ShiftingCache_unfold_2224
+-- Start pre-optimization for design .work.Multiplier.pipelined_unfold_2445
+-- Start pre-optimization for design .work.Synchronizer.FSM
+Info, Command 'pre_optimize' finished successfully
+{Package .std.standard} {Package .work.Constants} {Entity .work.Cache} {Entity .work.DMA} {Entity .work.MultiplierCell} {Entity .work.MultiplierPipe} {Entity .work.Multiplier} {Entity .work.Synchronizer} {Package .IEEE.std_logic_1164} {Package .IEEE.NUMERIC_STD} {Package .IEEE.std_logic_arith} {Package .IEEE.STD_LOGIC_UNSIGNED}
+{Architecture .work.Cache.ShiftingCache} {Architecture .work.DMA.seq} {Architecture .work.MultiplierCell.booth} {Architecture .work.MultiplierPipe.pipe} {Architecture .work.Multiplier.pipelined} {Architecture .work.Synchronizer.FSM}
+{Package .std.standard} {Package .work.Constants} {Entity .work.Cache} {Entity .work.DMA} {Entity .work.MultiplierCell} {Entity .work.MultiplierPipe} {Entity .work.Multiplier} {Entity .work.Synchronizer} {Package .IEEE.std_logic_1164} {Package .IEEE.NUMERIC_STD} {Package .IEEE.std_logic_arith} {Package .IEEE.STD_LOGIC_UNSIGNED}
+{Architecture .work.Cache.ShiftingCache} {Architecture .work.DMA.seq} {Architecture .work.MultiplierCell.booth} {Architecture .work.MultiplierPipe.pipe} {Architecture .work.Multiplier.pipelined} {Architecture .work.Synchronizer.FSM}
+{Package .std.standard} {Package .work.Constants} {Entity .work.Cache} {Entity .work.DMA} {Entity .work.MultiplierCell} {Entity .work.MultiplierPipe} {Entity .work.Multiplier} {Entity .work.Synchronizer} {Package .IEEE.std_logic_1164} {Package .IEEE.NUMERIC_STD} {Package .IEEE.std_logic_arith} {Package .IEEE.STD_LOGIC_UNSIGNED}
+-- Compiling root entity Synchronizer(FSM)
+-- Compiling entity DMA(seq)
+"/home/ayman/Desktop/VLSIProject/DMA.vhd",line 23: Warning, temp_address is not assigned under reset; need loops to preserve its value.
+-- Compiling entity Cache(ShiftingCache)
+"/home/ayman/Desktop/VLSIProject/Cache.vhd",line 18: Warning, temp_Window is not always assigned. Storage may be needed..
+-- Compiling entity Multiplier(pipelined)
+-- Compiling entity MultiplierPipe_8(pipe)
+-- Compiling entity MultiplierCell_8(booth)
+-- Info, replacing MultiplierCell_8(booth)
+-- Info, replacing MultiplierPipe_8(pipe)
+"/home/ayman/Desktop/VLSIProject/Synchronizer.vhd",line 51: Warning, DMAReadMode is not assigned under reset; need loops to preserve its value.
+"/home/ayman/Desktop/VLSIProject/Synchronizer.vhd",line 51: Warning, DMAmode is not assigned under reset; need loops to preserve its value.
+"/home/ayman/Desktop/VLSIProject/Synchronizer.vhd",line 26: Warning, CacheRow is not always assigned. Storage may be needed..
+"/home/ayman/Desktop/VLSIProject/Synchronizer.vhd",line 22: Warning, Filterdata is not always assigned. Storage may be needed..
+-- Info, replacing Synchronizer(FSM)
+Info, Command 'elaborate' finished successfully
+{Package .std.standard} {Package .work.Constants} {Entity .work.Cache} {Entity .work.DMA} {Entity .work.MultiplierCell} {Entity .work.MultiplierPipe} {Entity .work.Multiplier} {Entity .work.Synchronizer} {Package .IEEE.std_logic_1164} {Package .IEEE.NUMERIC_STD} {Package .IEEE.std_logic_arith} {Package .IEEE.STD_LOGIC_UNSIGNED}
+{Architecture .work.Cache.ShiftingCache} {Architecture .work.DMA.seq} {Architecture .work.MultiplierCell.booth} {Architecture .work.MultiplierPipe.pipe} {Architecture .work.Multiplier.pipelined} {Architecture .work.Synchronizer.FSM}
+{Package .std.standard} {Package .work.Constants} {Entity .work.Cache} {Entity .work.DMA} {Entity .work.MultiplierCell} {Entity .work.MultiplierPipe} {Entity .work.Multiplier} {Entity .work.Synchronizer} {Package .IEEE.std_logic_1164} {Package .IEEE.NUMERIC_STD} {Package .IEEE.std_logic_arith} {Package .IEEE.STD_LOGIC_UNSIGNED}
+-- Boundary optimization.
+-- Boundary optimization.
+-- Boundary optimization.
+-- Start pre-optimization for design .work.DMA.seq_unfold_1383_0
+"/home/ayman/Desktop/VLSIProject/DMA.vhd", line 31:Info, Inferred counter instance 'write_pointer' of type 'counter_up_cnt_en_aclear_clock_18'
+-- Start pre-optimization for design .work.Cache.ShiftingCache_unfold_2224_0
+
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(1).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(2).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(3).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(4).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(5).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(6).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(7).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(8).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(9).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(10).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(11).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(12).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(13).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(14).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(15).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(16).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(17).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(18).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(19).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(20).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(21).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(22).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(23).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(24).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(25).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(26).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(27).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(28).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(29).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(30).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(31).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(32).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(33).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(34).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(35).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(36).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(37).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(38).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(39).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(40).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(41).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(42).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(43).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(44).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(45).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(46).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(47).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(48).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(49).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(50).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(51).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(52).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(53).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(54).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(55).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(56).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(57).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(58).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(59).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(60).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(61).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(62).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(63).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(64).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(65).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(66).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(67).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(68).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(69).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(70).
+Info, Merging parallel Dlatch, temp_Window(0) and temp_Window(71).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(73).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(74).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(75).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(76).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(77).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(78).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(79).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(80).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(81).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(82).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(83).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(84).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(85).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(86).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(87).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(88).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(89).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(90).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(91).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(92).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(93).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(94).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(95).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(96).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(97).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(98).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(99).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(100).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(101).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(102).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(103).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(104).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(105).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(106).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(107).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(108).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(109).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(110).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(111).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(112).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(113).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(114).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(115).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(116).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(117).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(118).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(119).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(120).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(121).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(122).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(123).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(124).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(125).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(126).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(127).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(128).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(129).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(130).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(131).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(132).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(133).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(134).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(135).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(136).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(137).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(138).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(139).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(140).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(141).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(142).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(143).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(144).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(145).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(146).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(147).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(148).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(149).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(150).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(151).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(152).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(153).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(154).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(155).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(156).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(157).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(158).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(159).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(160).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(161).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(162).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(163).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(164).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(165).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(166).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(167).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(168).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(169).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(170).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(171).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(172).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(173).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(174).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(175).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(176).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(177).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(178).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(179).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(180).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(181).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(182).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(183).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(184).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(185).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(186).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(187).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(188).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(189).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(190).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(191).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(192).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(193).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(194).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(195).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(196).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(197).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(198).
+Info, Merging parallel Dlatch, temp_Window(72) and temp_Window(199).
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_197.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_196.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_195.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_194.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_193.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_192.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_191.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_190.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_189.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_188.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_187.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_186.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_185.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_184.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_183.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_182.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_181.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_180.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_179.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_178.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_177.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_176.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_175.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_174.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_173.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_172.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_171.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_170.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_169.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_168.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_167.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_166.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_165.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_164.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_163.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_162.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_161.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_160.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_159.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_158.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_157.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_156.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_155.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_154.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_153.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_152.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_151.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_150.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_149.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_148.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_147.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_146.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_145.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_144.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_143.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_142.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_141.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_140.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_139.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_138.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_137.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_136.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_135.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_134.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_133.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_132.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_131.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_130.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_129.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_128.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_127.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_126.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_125.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_124.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_123.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_122.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_121.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_120.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_119.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_118.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_117.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_116.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_115.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_114.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_113.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_112.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_111.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_110.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_109.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_108.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_107.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_106.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_105.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_104.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_103.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_102.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_101.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_100.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_99.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_98.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_97.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_96.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_95.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_94.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_93.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_92.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_91.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_90.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_89.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_88.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_87.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_86.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_85.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_84.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_83.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_82.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_81.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_80.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_79.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_78.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_77.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_76.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_75.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_74.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_73.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_72.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_71.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_70.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_69.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_68.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_67.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_66.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_65.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_64.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_63.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_62.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_61.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_60.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_59.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_58.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_57.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_56.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_55.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_54.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_53.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_52.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_51.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_50.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_49.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_48.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_47.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_46.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_45.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_44.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_43.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_42.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_41.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_40.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_39.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_38.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_37.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_36.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_35.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_34.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_33.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_32.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_31.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_30.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_29.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_28.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_27.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_26.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_25.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_24.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_23.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_22.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_21.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_20.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_19.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_18.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_17.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_16.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_15.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_14.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_13.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_12.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_11.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_10.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_9.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_8.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_7.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_6.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_5.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_4.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_3.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_2.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_1.
+Info, Merging parallel DFF, Window_dup_198 and Window_dup_0.
+Info, Merging parallel DFF, Window_dup_198 and Window.-- Start pre-optimization for design .work.MultiplierCell_8.booth_unfold_1667
+-- Start pre-optimization for design .work.MultiplierCell_8.booth_unfold_1668
+-- Start pre-optimization for design .work.MultiplierPipe_8.pipe_unfold_1568_1
+-- Start pre-optimization for design .work.Multiplier.pipelined_unfold_2445_0
+"/home/ayman/Desktop/VLSIProject/Multiplier.vhd", line 68:Info, 24 adders in series feeding nets 'temp_sum(0)' to 'temp_sum(12)', were balanced.
+-- Start pre-optimization for design .work.Synchronizer.FSM
+"/home/ayman/Desktop/VLSIProject/Synchronizer.vhd", line 81:Info, Inferred counter instance 'row_row_count' of type 'counter_up_sclear_aclear_clock_clk_en_3'
+"/home/ayman/Desktop/VLSIProject/Synchronizer.vhd", line 82:Info, Inferred counter instance 'processFinishCount' of type 'counter_up_sclear_aclear_clock_clk_en_3'
+Info, Command 'pre_optimize' finished successfully
+-- Start pre-optimization for design .work.DMA.seq_unfold_1383_0
+-- Start pre-optimization for design .work.Cache.ShiftingCache_unfold_2224_0
+-- Start pre-optimization for design .work.MultiplierCell_8.booth_unfold_1667
+-- Start pre-optimization for design .work.MultiplierCell_8.booth_unfold_1668
+-- Start pre-optimization for design .work.MultiplierPipe_8.pipe_unfold_1568_1
+-- Start pre-optimization for design .work.Multiplier.pipelined_unfold_2445_0
+-- Start pre-optimization for design .work.Synchronizer.FSM
+Info, Command 'pre_optimize' finished successfully
+-- Boundary optimization.
+-- Boundary optimization.
+-- Boundary optimization.
+-- Boundary optimization.
+-- Boundary optimization.
+-- Boundary optimization.
+-- Boundary optimization.
+-- Boundary optimization.
+-- Start pre-optimization for design .work.DMA.seq_unfold_1383_0
+-- Start pre-optimization for design .work.Multiplier.pipelined_unfold_2445_0
+-- Start pre-optimization for design .work.Synchronizer.FSM
+Info, Command 'pre_optimize' finished successfully
+-- Start pre-optimization for design .work.DMA.seq_unfold_1383_0
+-- Start pre-optimization for design .work.Multiplier.pipelined_unfold_2445_0
+-- Start pre-optimization for design .work.Synchronizer.FSM
+Info, Command 'pre_optimize' finished successfully
+No constraint for register2register
+No constraint for input2register
+No constraint for input2output
+No constraint for register2output
+->set wire_table "" 
+Info: setting wire_table to 
+NO wire table is found
+-- Optimizing netlist .work.DMA.seq_unfold_1383_0
+-- Matching combinational logic..
+-- Matching non-combinational logic..
+-- Covering..
+-- CPU Time used :   00:00 Mapping
+Re-checking DRC after adjustments
+-- Optimizing netlist .work.Multiplier.pipelined_unfold_2445_0
+-- Matching combinational logic..
+-- Matching non-combinational logic..
+-- Covering..
+-- CPU Time used :   00:00 Mapping
+-- Optimizing netlist .work.Synchronizer.FSM
+-- Matching combinational logic..
+-- Matching non-combinational logic..
+-- Covering..
+-- CPU Time used :   00:00 Mapping
+Re-checking DRC after adjustments
+Re-checking DRC after adjustments
+-- Final Design Rule Check..
+Re-checking DRC after adjustments
+Re-checking DRC after adjustments
+Info, Command 'optimize' finished successfully
+-- Start timing optimization for design .work.DMA.seq_unfold_1383_0
+Starting Timing Characterization...
+Starting Timing Analysis...
+NO wire table is found
+Timing analysis done, time = 0 CPU secs.
+Timing characterization done, time = 0 CPU secs.
+Info, Command 'optimize_timing' finished successfully
+NO wire table is found
+Info, Command 'report_delay' finished successfully
+Info, Command 'report_area' finished successfully
+-- Boundary optimization.
+-- Start pre-optimization for design .work.DMA.seq_unfold_1383_0
+-- Start pre-optimization for design .work.Multiplier.pipelined_unfold_2445_0
+-- Start pre-optimization for design .work.Synchronizer.FSM
+Info, Command 'pre_optimize' finished successfully
+-- Start pre-optimization for design .work.DMA.seq_unfold_1383_0
+-- Start pre-optimization for design .work.Multiplier.pipelined_unfold_2445_0
+-- Start pre-optimization for design .work.Synchronizer.FSM
+Info, Command 'pre_optimize' finished successfully
+->set wire_table "" 
+Info: setting wire_table to 
+NO wire table is found
+-- Optimizing netlist .work.DMA.seq_unfold_1383_0
+-- Matching combinational logic..
+-- Matching non-combinational logic..
+-- Covering..
+-- CPU Time used :   00:00 Mapping
+-- Optimizing netlist .work.Multiplier.pipelined_unfold_2445_0
+-- Matching combinational logic..
+-- Matching non-combinational logic..
+-- Covering..
+-- CPU Time used :   00:00 Mapping
+-- Optimizing netlist .work.Synchronizer.FSM
+-- Matching combinational logic..
+-- Matching non-combinational logic..
+-- Covering..
+-- CPU Time used :   00:00 Mapping
+-- Final Design Rule Check..
+Re-checking DRC after adjustments
+Re-checking DRC after adjustments
+Info, Command 'optimize' finished successfully
+-- Start timing optimization for design .work.DMA.seq_unfold_1383_0
+Starting Timing Characterization...
+Starting Timing Analysis...
+NO wire table is found
+Timing analysis done, time = 0 CPU secs.
+Timing characterization done, time = 0 CPU secs.
+Info, Command 'optimize_timing' finished successfully
+Info, Command 'report_area' finished successfully
+->set wire_table "" 
+Info: setting wire_table to 
+NO wire table is found
+-- Optimizing netlist .work.MultiplierCell_8.booth_unfold_1580
+-- Matching combinational logic..
+-- Matching non-combinational logic..
+-- Covering..
+-- CPU Time used :   00:00 Mapping
+Re-checking DRC after adjustments
+-- Optimizing netlist .work.MultiplierCell_8.booth
+-- Matching combinational logic..
+-- Matching non-combinational logic..
+-- Covering..
+-- CPU Time used :   00:00 Mapping
+Re-checking DRC after adjustments
+-- Optimizing netlist .work.MultiplierPipe_8.pipe_unfold_1568
+-- Matching combinational logic..
+-- Matching non-combinational logic..
+-- Covering..
+-- CPU Time used :   00:00 Mapping
+Re-checking DRC after adjustments
+-- Optimizing netlist .work.Multiplier.pipelined_unfold_2445
+-- Matching combinational logic..
+-- Matching non-combinational logic..
+-- Covering..
+-- CPU Time used :   00:01 Mapping
+Re-checking DRC after adjustments
+-- Final Design Rule Check..
+Info, Command 'optimize' finished successfully
+-- Start timing optimization for design .work.MultiplierCell_8.booth_unfold_1580
+Starting Timing Characterization...
+Starting Timing Analysis...
+NO wire table is found
+Timing analysis done, time = 0 CPU secs.
+Timing characterization done, time = 0 CPU secs.
+Info, Command 'optimize_timing' finished successfully
+Info, Command 'report_area' finished successfully
+Info, Command 'report_area' finished successfully

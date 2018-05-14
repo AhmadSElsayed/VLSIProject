@@ -1,0 +1,77 @@
+CLOCK_CYCLE "5.500000" .work.Synchronizer.FSM.int_Clock
+PULSE_WIDTH "2.750000" .work.Synchronizer.FSM.int_Clock
+pad "T" .work.Synchronizer.FSM.Clock
+PULSE_WIDTH "3.000000" .work.Synchronizer.FSM.Clock
+CLOCK_CYCLE "6.000000" .work.Synchronizer.FSM.Clock
+pad "T" .work.Synchronizer.FSM.Reset
+pad "T" .work.Synchronizer.FSM.Start
+pad "T" .work.Synchronizer.FSM.Filter
+pad "T" .work.Synchronizer.FSM.Stride
+pad "T" .work.Synchronizer.FSM.REnable
+pad "T" .work.Synchronizer.FSM.RWR
+pad "T" .work.Synchronizer.FSM.Done
+pad "T" .work.Synchronizer.FSM.RDataOut(7)
+pad "T" .work.Synchronizer.FSM.RDataOut(6)
+pad "T" .work.Synchronizer.FSM.RDataOut(5)
+pad "T" .work.Synchronizer.FSM.RDataOut(4)
+pad "T" .work.Synchronizer.FSM.RDataOut(3)
+pad "T" .work.Synchronizer.FSM.RDataOut(2)
+pad "T" .work.Synchronizer.FSM.RDataOut(1)
+pad "T" .work.Synchronizer.FSM.RDataOut(0)
+pad "T" .work.Synchronizer.FSM.RAddress(17)
+pad "T" .work.Synchronizer.FSM.RAddress(16)
+pad "T" .work.Synchronizer.FSM.RAddress(15)
+pad "T" .work.Synchronizer.FSM.RAddress(14)
+pad "T" .work.Synchronizer.FSM.RAddress(13)
+pad "T" .work.Synchronizer.FSM.RAddress(12)
+pad "T" .work.Synchronizer.FSM.RAddress(11)
+pad "T" .work.Synchronizer.FSM.RAddress(10)
+pad "T" .work.Synchronizer.FSM.RAddress(9)
+pad "T" .work.Synchronizer.FSM.RAddress(8)
+pad "T" .work.Synchronizer.FSM.RAddress(7)
+pad "T" .work.Synchronizer.FSM.RAddress(6)
+pad "T" .work.Synchronizer.FSM.RAddress(5)
+pad "T" .work.Synchronizer.FSM.RAddress(4)
+pad "T" .work.Synchronizer.FSM.RAddress(3)
+pad "T" .work.Synchronizer.FSM.RAddress(2)
+pad "T" .work.Synchronizer.FSM.RAddress(1)
+pad "T" .work.Synchronizer.FSM.RAddress(0)
+set_attribute .work.Synchronizer.FSM.Clock -name CLOCK_CYCLE -value 6.000000 -port
+set_attribute .work.Synchronizer.FSM.Clock -name PULSE_WIDTH -value 3.000000 -port
+set_attribute .work.Synchronizer.FSM.Clock -name pad -value T -port
+set_attribute .work.Synchronizer.FSM.Reset -name pad -value T -port
+set_attribute .work.Synchronizer.FSM.Start -name pad -value T -port
+set_attribute .work.Synchronizer.FSM.Filter -name pad -value T -port
+set_attribute .work.Synchronizer.FSM.Stride -name pad -value T -port
+set_attribute .work.Synchronizer.FSM.REnable -name pad -value T -port
+set_attribute .work.Synchronizer.FSM.RWR -name pad -value T -port
+set_attribute .work.Synchronizer.FSM.Done -name pad -value T -port
+set_attribute .work.Synchronizer.FSM.RDataOut(7) -name pad -value T -port
+set_attribute .work.Synchronizer.FSM.RDataOut(6) -name pad -value T -port
+set_attribute .work.Synchronizer.FSM.RDataOut(5) -name pad -value T -port
+set_attribute .work.Synchronizer.FSM.RDataOut(4) -name pad -value T -port
+set_attribute .work.Synchronizer.FSM.RDataOut(3) -name pad -value T -port
+set_attribute .work.Synchronizer.FSM.RDataOut(2) -name pad -value T -port
+set_attribute .work.Synchronizer.FSM.RDataOut(1) -name pad -value T -port
+set_attribute .work.Synchronizer.FSM.RDataOut(0) -name pad -value T -port
+set_attribute .work.Synchronizer.FSM.RAddress(17) -name pad -value T -port
+set_attribute .work.Synchronizer.FSM.RAddress(16) -name pad -value T -port
+set_attribute .work.Synchronizer.FSM.RAddress(15) -name pad -value T -port
+set_attribute .work.Synchronizer.FSM.RAddress(14) -name pad -value T -port
+set_attribute .work.Synchronizer.FSM.RAddress(13) -name pad -value T -port
+set_attribute .work.Synchronizer.FSM.RAddress(12) -name pad -value T -port
+set_attribute .work.Synchronizer.FSM.RAddress(11) -name pad -value T -port
+set_attribute .work.Synchronizer.FSM.RAddress(10) -name pad -value T -port
+set_attribute .work.Synchronizer.FSM.RAddress(9) -name pad -value T -port
+set_attribute .work.Synchronizer.FSM.RAddress(8) -name pad -value T -port
+set_attribute .work.Synchronizer.FSM.RAddress(7) -name pad -value T -port
+set_attribute .work.Synchronizer.FSM.RAddress(6) -name pad -value T -port
+set_attribute .work.Synchronizer.FSM.RAddress(5) -name pad -value T -port
+set_attribute .work.Synchronizer.FSM.RAddress(4) -name pad -value T -port
+set_attribute .work.Synchronizer.FSM.RAddress(3) -name pad -value T -port
+set_attribute .work.Synchronizer.FSM.RAddress(2) -name pad -value T -port
+set_attribute .work.Synchronizer.FSM.RAddress(1) -name pad -value T -port
+set_attribute .work.Synchronizer.FSM.RAddress(0) -name pad -value T -port
+set input2register 5.500000
+set register2register 5.500000
+set register2output 5.500000

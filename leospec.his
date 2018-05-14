@@ -1,0 +1,44 @@
+#
+#
+# 
+# Mon May 14 09:29:00 2018
+load_library tsmc035_typ
+set_working_dir /home/ayman/Desktop
+read -technology "tsmc035_typ"  { /home/ayman/Desktop/VLSIProject/Constants.vhd }
+read -technology "tsmc035_typ"  { /home/ayman/Desktop/VLSIProject/Cache.vhd }
+read -technology "tsmc035_typ"  { /home/ayman/Desktop/VLSIProject/DMA.vhd }
+read -technology "tsmc035_typ"  { /home/ayman/Desktop/VLSIProject/MultiplierCell.vhd }
+read -technology "tsmc035_typ"  { /home/ayman/Desktop/VLSIProject/MultiplierPipe.vhd }
+read -technology "tsmc035_typ"  { /home/ayman/Desktop/VLSIProject/Multiplier.vhd }
+read -technology "tsmc035_typ"  { /home/ayman/Desktop/VLSIProject/Synchronizer.vhd }
+pre_optimize -common_logic -unused_logic -boundary -xor_comparator_optimize 
+pre_optimize -extract 
+list_design -hdl .*.
+list_design -hdl .*.*.
+list_design -hdl .*.
+list_design -hdl .*.*.
+list_design -hdl .*.
+elaborate Synchronizer -architecture FSM 
+list_design -hdl .*.
+list_design -hdl .*.*.
+list_design -hdl .*.
+pre_optimize .work.Synchronizer.FSM -common_logic -unused_logic -boundary -xor_comparator_optimize 
+pre_optimize .work.Synchronizer.FSM -extract 
+pre_optimize .work.Synchronizer.FSM -common_logic -unused_logic -boundary -xor_comparator_optimize 
+pre_optimize .work.Synchronizer.FSM -extract 
+optimize .work.Synchronizer.FSM -target tsmc035_typ -macro -area -effort quick -hierarchy preserve 
+ set wire_table "" 
+optimize_timing .work.Synchronizer.FSM 
+report_delay /home/ayman/Desktop/delay -num_paths 1 -critical_paths -clock_frequency
+report_area /home/ayman/Desktop/Area -cell_usage -all_leafs 
+pre_optimize .work.Synchronizer.FSM -common_logic -boundary -xor_comparator_optimize 
+pre_optimize .work.Synchronizer.FSM -extract 
+optimize .work.Synchronizer.FSM -target tsmc035_typ -macro -area -effort quick -hierarchy preserve 
+ set wire_table "" 
+optimize_timing .work.Synchronizer.FSM 
+report_area /home/ayman/Desktop/Area -cell_usage -all_leafs 
+optimize .work.Multiplier.pipelined_unfold_2445 -target tsmc035_typ -macro -area -effort quick -hierarchy preserve 
+ set wire_table "" 
+optimize_timing .work.Multiplier.pipelined_unfold_2445 
+report_area /home/ayman/Desktop/Area -cell_usage -all_leafs 
+report_area /home/ayman/Desktop/Area -cell_usage -all_leafs 
