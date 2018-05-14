@@ -26,7 +26,6 @@ begin
 			write_pointer <= (others => '0');
 			read_done <= '0';
 			write_done <= '0';
-			f_done <= '0';
 			address <= (others => 'Z');
 		elsif falling_edge(clock) then 
 			case mode is
